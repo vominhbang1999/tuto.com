@@ -34,7 +34,7 @@ $(function () {
 // Main
 $('.slider').owlCarousel({
     nav: true,
-    autoplay: true,
+    // autoplay:true,
     dots: false,
     navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
     responsive: {
@@ -52,5 +52,14 @@ $('.slider').owlCarousel({
             dots: true
         }
     }
+});
+$(document).ready(function () {
+    $(".form-search").hide();
+    $(".hien-search").click(function () {
+        $(".form-search").toggle();
+        $(".form-search").css({
+            "width": "230px"
+        });
+    });
 });
 //# sourceMappingURL=main.js.map
