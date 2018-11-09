@@ -1,0 +1,38 @@
+<!-- ////////////// HEADER ////////////// -->
+header
+	.container
+		nav.navbar.navbar-expand-lg.navbar-light
+			a.navbar-brand(href="#") 
+				figure
+					img.img-fluid(src="./img/logo_header.png", alt="Logo")
+			//- Đây là nút sẽ hiển thị trong mobile
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+				.mr-auto
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href="index.html")
+							| Trang chủ
+					li.nav-item
+						a.nav-link(href="#") Giới thiệu
+					li.nav-item
+						a.nav-link(href="#") chương trình khuyến mãi
+					li.nav-item
+						a.nav-link(href="#") Tin tức
+					li.nav-item
+						a.nav-link(href="#") Tuyển dụng
+					li.nav-item
+						a.nav-link(href="#") liên hệ
+					li.nav-item.co1
+						a.nav-link(href="#")
+							img.img-fluid(src="img/icon_vietnam.png", alt="" )
+					li.nav-item.co2
+						a.nav-link(href="#")
+							img.img-fluid(src="img/icon_usa.png", alt="")
+		form.form-inline
+			input.form-control.form-search(type='search', placeholder='Search', aria-label='Search')
+			i.fa.fa-search.hien-search
+
+<!-- ////////////// HEADER ////////////// -->

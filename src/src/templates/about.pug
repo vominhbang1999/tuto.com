@@ -1,0 +1,31 @@
+extends _layout/layout
+
+block variables
+	- var title = 'About'
+	- var description = 'Description for about page'
+	- var bodyclass = 'about'
+
+block body
+	section.about
+		.container
+			.row
+				.col-sm-1
+					figure
+						img.img-fluid(src="img/banh_xe.png", alt="")
+				.col-sm-11
+					.row
+						.box2
+							figure
+								img.img-fluid(src="img/home_news1.png", alt="")
+					.row
+						.box1
+							.tieude
+								h3 GIỚI THIỆU
+							.cheocenter
+								p
+							.text
+								p Tuto Việt Nam tự hào là nhà phân phối vỏ - ruột xe cho hàng ngàn chiết xe trong thập kỷ qua . Với hơn 10 năm hoạt động phân phối ruột vỏ xe. Tuto thấu hiểu những gì tốt nhất cho chiếc xe của bạn . Từ những mong muốn của bạn đội ngũ Tuto Cam kết 1 dịch vụ tốt nhất từ A đến Z 
+							i.fa.fa-arrow-right
+
+
+

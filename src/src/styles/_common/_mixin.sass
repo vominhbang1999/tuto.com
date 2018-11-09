@@ -1,0 +1,47 @@
+// Các Mixin viết vo đây
+@mixin tieudecenter()
+		.tieude
+			width: 100%
+			text-align: center
+			color: white
+			font-family: 'Open Sans', sans-serif
+			display: flex
+			justify-content: center
+			align-items: center
+@mixin tieudeleft()
+		.tieude
+			width: 100%
+			text-align: center
+			color: white
+			font-family: 'Open Sans', sans-serif
+			display: flex
+			justify-content: left
+			align-items: left
+			h3
+				font-size: 1.7rem
+				+media-breakpoint-up(sm)
+					font-size: 20px
+				+media-breakpoint-up(md)
+					font-size: 1.7rem
+@mixin tieuderight()
+		.tieude
+			width: 100%
+			text-align: center
+			color: white
+			font-family: 'Open Sans', sans-serif
+			display: flex
+			justify-content: right
+			align-items: right
+@mixin cangiua()
+	justify-content: center
+	align-items: center
+	display: flex
+@mixin cangtrai()
+	justify-content: left
+	align-items: left
+	display: flex
+@mixin cangduoi()
+	justify-content: bottom
+	align-items: bottom
+	display: flex
+

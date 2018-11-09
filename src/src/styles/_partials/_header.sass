@@ -1,0 +1,68 @@
+header
+	background-color: white
+	figure
+		width: 78px
+		height: 78px
+		position: absolute
+		top: 0
+		left: 2rem
+		z-index: 3
+		background-color: #fff
+		border-radius: 5px
+		img
+			padding: 0.5rem 1rem 0.8rem 1rem
+	.navbar-nav
+		margin-top: 25px
+		.nav-item
+			padding-right: 30px
+			@media (min-width: 992px)
+				padding-right: 10px
+			@media (min-width: 1200px)
+				padding-right: 30px
+			text-align: center
+			.nav-link
+				color: black
+				text-transform: uppercase
+			+media-breakpoint-down(sm)
+				&:hover
+					background-color: #ff9800
+				.nav-link
+					color: black
+					text-transform: uppercase
+					&:hover
+						color: white
+
+		+media-breakpoint-up(lg)
+			.co1
+				padding-right: 0
+				.nav-link
+					border-left: 1px solid #8080805c
+					margin-top: 5px
+					padding-top: 0px
+					padding-bottom: 0px
+			.co2
+				.nav-link
+					border-right: 1px solid #8080805c
+					margin-top: 5px
+					padding-top: 0px
+					padding-bottom: 0px
+	form
+			position: absolute
+			top: 14px
+			right: 0.5rem
+			z-index: 5
+			+media-breakpoint-up(md)
+				right: 4rem
+			@media (min-width: 1000px)
+				top: 38px
+				right: 3rem
+			@media (min-width: 1200px)
+				right: 4rem
+			@media (min-width: 1300px)
+				right: 7rem
+			input
+				margin: -10px -19px 0px 0px
+			i
+				padding-bottom: 10px
+	
+
