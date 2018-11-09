@@ -6328,8 +6328,7 @@ html, body {
     transform: skew(40deg);
     background: #f1770c;
     display: block;
-    content: '';
-    text-align: center; }
+    content: ''; }
 
 .cheoleft {
   width: 100%;
@@ -6341,8 +6340,7 @@ html, body {
     transform: skew(40deg);
     background: #f1770c;
     display: block;
-    content: '';
-    text-align: center; }
+    content: ''; }
 
 @media print {
   .container {
@@ -6510,12 +6508,26 @@ footer img {
         display: flex;
         justify-content: left;
         align-items: left; }
+        .home-khuyenmai .khuyenmai .col-sm-6 .info .tieude h3 {
+          font-size: 1.7rem; }
+          @media (min-width: 576px) {
+            .home-khuyenmai .khuyenmai .col-sm-6 .info .tieude h3 {
+              font-size: 20px; } }
+          @media (min-width: 768px) {
+            .home-khuyenmai .khuyenmai .col-sm-6 .info .tieude h3 {
+              font-size: 1.7rem; } }
       .home-khuyenmai .khuyenmai .col-sm-6 .info .text p {
         color: white;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif; }
+        @media (min-width: 576px) {
+          .home-khuyenmai .khuyenmai .col-sm-6 .info .text p {
+            font-size: 14px; } }
+        @media (min-width: 768px) {
+          .home-khuyenmai .khuyenmai .col-sm-6 .info .text p {
+            font-size: 20px; } }
       .home-khuyenmai .khuyenmai .col-sm-6 .info a {
-        background-color: #ff9800ed;
+        background-color: #ff9800;
         width: 160px;
         color: white; }
   .home-khuyenmai .khuyenmai .babanhxe {
@@ -6524,13 +6536,61 @@ footer img {
       width: 350px;
       height: auto; }
       @media (min-width: 576px) {
-        .home-khuyenmai .khuyenmai .babanhxe figure img {
-          margin-left: 40px; } }
+        .home-khuyenmai .khuyenmai .babanhxe figure img ma {
+          rgin-left: 40px; } }
       @media (min-width: 768px) {
         .home-khuyenmai .khuyenmai .babanhxe figure img {
           margin-left: 60px; } }
       @media (min-width: 992px) {
         .home-khuyenmai .khuyenmai .babanhxe figure img {
           margin-left: 90px; } }
+
+.news figure img {
+  width: 100%; }
+
+.news figure figcaption {
+  padding: 1rem; }
+  .news figure figcaption .tieude {
+    text-align: left; }
+  .news figure figcaption p {
+    text-align: left; }
+  .news figure figcaption .icon i {
+    color: #ff9800; }
+
+@media (min-width: 992px) {
+  .news figure {
+    text-align: right;
+    position: relative;
+    width: 100%; }
+    .news figure img {
+      width: initial; }
+    .news figure figcaption {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      background: #ffffff;
+      width: 50%;
+      transform: translateY(50%);
+      padding: 2rem 6rem 2rem 0; }
+      .news figure figcaption .icon {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%); } }
+
+.news .banhxe {
+  display: none;
+  max-width: 80px;
+  background-image: url("../img/banh_xe.png");
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .news .banhxe {
+      display: flex; } }
+
+.home-tintuc .tintuc1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
