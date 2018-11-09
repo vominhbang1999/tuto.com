@@ -23,6 +23,15 @@ header
 			.nav-link
 				color: black
 				text-transform: uppercase
+			+media-breakpoint-down(sm)
+				&:hover
+					background-color: #ff9800
+				.nav-link
+					color: black
+					text-transform: uppercase
+					&:hover
+						color: white
+
 		+media-breakpoint-up(lg)
 			.co1
 				padding-right: 0

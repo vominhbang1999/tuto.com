@@ -6373,6 +6373,14 @@ header {
       header .navbar-nav .nav-item .nav-link {
         color: black;
         text-transform: uppercase; }
+      @media (max-width: 767.98px) {
+        header .navbar-nav .nav-item:hover {
+          background-color: #ff9800; }
+        header .navbar-nav .nav-item .nav-link {
+          color: black;
+          text-transform: uppercase; }
+          header .navbar-nav .nav-item .nav-link:hover {
+            color: white; } }
     @media (min-width: 992px) {
       header .navbar-nav .co1 {
         padding-right: 0; }
@@ -6409,8 +6417,46 @@ header {
     header form i {
       padding-bottom: 10px; }
 
-footer img {
-  max-width: 200px; }
+footer {
+  background: url("../img/footer.png");
+  background-size: cover; }
+  footer .footer1 {
+    padding-top: 2rem; }
+    footer .footer1 h4 {
+      color: white; }
+    footer .footer1 p {
+      color: #7d7d7d; }
+    footer .footer1 form.form-inline .form-group {
+      border-bottom: 1px solid #7d7d7d;
+      padding: 0.1rem; }
+      footer .footer1 form.form-inline .form-group input.form-control {
+        width: 400px;
+        background: none;
+        border: none; }
+    footer .footer1 form.form-inline button {
+      background-color: #FF9800;
+      border: 1px solid #FF9800;
+      border-radius: 0;
+      padding: 0.5rem 1rem; }
+  footer .footer2 {
+    padding-bottom: 3rem; }
+    footer .footer2 h5 {
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    footer .footer2 p {
+      color: #7d7d7d; }
+    footer .footer2 a p {
+      color: #7d7d7d; }
+    footer .footer2 a:hover {
+      text-decoration: none; }
+  footer .footercuoi {
+    justify-content: left;
+    align-items: left;
+    display: flex; }
+    footer .footercuoi p {
+      text-transform: uppercase;
+      color: #7d7d7d; }
 
 .slider {
   position: relative; }
@@ -6455,6 +6501,16 @@ footer img {
       .slider .item .title p {
         color: white;
         font-size: 15px; } }
+  @media (max-width: 767.98px) {
+    .slider .item .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      background: linear-gradient(180deg, #ff000000 0%, #000000 100%); }
+      .slider .item .title p {
+        color: white;
+        font-size: 15px; } }
   @media (min-width: 768px) {
     .slider .item .title p {
       font-size: 25px; } }
@@ -6468,10 +6524,10 @@ footer img {
 
 .home-sanpham {
   background: url("../img/home_services_04.png");
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -1px; }
+  margin-top: -2px; }
   .home-sanpham .item {
     margin-bottom: 1rem; }
     .home-sanpham .item figure {
@@ -6530,14 +6586,17 @@ footer img {
         background-color: #ff9800;
         width: 160px;
         color: white; }
+      @media (max-width: 767.98px) {
+        .home-khuyenmai .khuyenmai .col-sm-6 .info {
+          padding: 2rem; } }
   .home-khuyenmai .khuyenmai .babanhxe {
     padding: 3rem; }
     .home-khuyenmai .khuyenmai .babanhxe figure img {
       width: 350px;
       height: auto; }
       @media (min-width: 576px) {
-        .home-khuyenmai .khuyenmai .babanhxe figure img ma {
-          rgin-left: 40px; } }
+        .home-khuyenmai .khuyenmai .babanhxe figure img {
+          margin-left: 40px; } }
       @media (min-width: 768px) {
         .home-khuyenmai .khuyenmai .babanhxe figure img {
           margin-left: 60px; } }
@@ -6549,7 +6608,12 @@ footer img {
   width: 100%; }
 
 .news figure figcaption {
-  padding: 1rem; }
+  padding: 3rem;
+  text-align: left; }
+  .news figure figcaption a {
+    background-color: #ff9800;
+    width: 160px;
+    color: white; }
   .news figure figcaption .tieude {
     text-align: left; }
   .news figure figcaption p {
@@ -6566,12 +6630,16 @@ footer img {
       width: initial; }
     .news figure figcaption {
       position: absolute;
-      top: 0%;
+      top: -4%;
       left: 0;
       background: #ffffff;
-      width: 50%;
+      width: 55%;
       transform: translateY(50%);
-      padding: 2rem 6rem 2rem 0; }
+      padding: 3rem; }
+      .news figure figcaption p {
+        width: 85%; }
+      .news figure figcaption .form-group {
+        width: 80%; }
       .news figure figcaption .icon {
         position: absolute;
         top: 50%;
@@ -6587,10 +6655,111 @@ footer img {
     .news .banhxe {
       display: flex; } }
 
-.home-tintuc .tintuc1 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%; }
+.home-tintuc {
+  background: url("../img/home_background_tintuc.png");
+  background-size: cover; }
+  .home-tintuc .tintuc1 {
+    padding: 2rem 0 1rem 0; }
+  .home-tintuc .tintuc2 {
+    padding-bottom: 3rem; }
+    .home-tintuc .tintuc2 .tintuc2-1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/home_news3.png");
+      background-size: cover;
+      display: block; }
+      @media (max-width: 700px) {
+        .home-tintuc .tintuc2 .tintuc2-1 {
+          display: none; } }
+      .home-tintuc .tintuc2 .tintuc2-1 .chuday {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0rem;
+        background: linear-gradient(180deg, #ecb57000 0%, #000000cf 100%); }
+    .home-tintuc .tintuc2 h5 {
+      color: white;
+      font-size: 23px;
+      font-family: inherit;
+      position: absolute;
+      top: 90%;
+      left: 6rem; }
+    .home-tintuc .tintuc2 .tintuc3 .tintuc3-2 {
+      background-color: white; }
+    .home-tintuc .tintuc2 .tintuc3 .col-sm-6 {
+      padding: 0; }
+      .home-tintuc .tintuc2 .tintuc3 .col-sm-6 img {
+        width: 100%; }
+      .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption {
+        padding: 1rem; }
+        @media (min-width: 768px) {
+          .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption {
+            padding-bottom: 0; } }
+        .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption h6 {
+          font-size: 15px; }
+          @media (min-width: 768px) {
+            .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption h6 {
+              font-size: 12px; } }
+          @media (min-width: 992px) {
+            .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption h6 {
+              font-size: 15px; } }
+        .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption p {
+          font-size: 14px; }
+          @media (min-width: 768px) {
+            .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption p {
+              font-size: 8px; } }
+          @media (min-width: 992px) {
+            .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption p {
+              font-size: 14px; } }
+        .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption .xemthem {
+          text-align: right;
+          font-size: 15px; }
+          .home-tintuc .tintuc2 .tintuc3 .col-sm-6 figcaption .xemthem a {
+            color: #ff6c00; }
+    .home-tintuc .tintuc2 .tintuc4 .col-sm-6 {
+      padding: 0; }
+    .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 {
+      order: 2;
+      background: white; }
+      .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 h6 {
+        font-size: 15px; }
+        @media (min-width: 768px) {
+          .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 h6 {
+            font-size: 9px; } }
+        @media (min-width: 992px) {
+          .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 h6 {
+            font-size: 15px; } }
+      .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 p {
+        font-size: 14px; }
+        @media (min-width: 768px) {
+          .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 p {
+            font-size: 8px; } }
+        @media (min-width: 992px) {
+          .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 p {
+            font-size: 14px; } }
+      @media (min-width: 768px) {
+        .home-tintuc .tintuc2 .tintuc4 .tintuc4-1 {
+          order: 1; } }
+    .home-tintuc .tintuc2 .tintuc4 .tintuc4-2 {
+      order: 1; }
+      @media (min-width: 768px) {
+        .home-tintuc .tintuc2 .tintuc4 .tintuc4-2 {
+          order: 2; } }
+      .home-tintuc .tintuc2 .tintuc4 .tintuc4-2 img {
+        width: 100%; }
+    .home-tintuc .tintuc2 .tintuc4 figcaption {
+      padding: 1rem; }
+      .home-tintuc .tintuc2 .tintuc4 figcaption .xemthem {
+        text-align: right;
+        font-size: 15px; }
+        .home-tintuc .tintuc2 .tintuc4 figcaption .xemthem a {
+          color: #ff6c00; }
+  .home-tintuc .tintuc1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

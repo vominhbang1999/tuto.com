@@ -45,6 +45,16 @@
 				p
 					color: white
 					font-size: 15px
+		+media-breakpoint-down(sm)
+			.title
+				position: absolute
+				bottom: 0
+				left: 0
+				text-align: center
+				background: linear-gradient(180deg, #ff000000 0%, #000000 100%)
+				p
+					color: white
+					font-size: 15px
 		+media-breakpoint-up(md)
 			.title
 				p
@@ -57,10 +67,10 @@
 	z-index: 1
 .home-sanpham
 	background: url('../img/home_services_04.png')
-	padding: 3rem 0 
+	padding: 4rem 0 
 	background-size: cover
 	background-attachment: fixed
-	margin-top: -1px
+	margin-top: -2px
 	.item
 		margin-bottom: 1rem
 		figure
@@ -94,6 +104,9 @@
 					background-color: #ff9800
 					width: 160px
 					color: white
+				+media-breakpoint-down(sm)
+					padding: 2rem
+					
 
 		.babanhxe
 			padding: 3rem
@@ -102,8 +115,7 @@
 					width: 350px
 					height: auto
 					+media-breakpoint-up(sm)
-						ma
-							rgin-left: 40px
+						margin-left: 40px
 					+media-breakpoint-up(md)
 						margin-left: 60px
 					+media-breakpoint-up(lg)
@@ -113,7 +125,12 @@
 		img
 			width: 100%
 		figcaption
-			padding: 1rem
+			padding: 3rem
+			text-align: left
+			a
+				background-color: #ff9800
+				width: 160px
+				color: white
 			.tieude
 				text-align: left
 			p
@@ -129,14 +146,20 @@
 			img
 				width: initial
 			figcaption
-				+pos(abs, 0% null null 0)
+				+pos(abs, -4% null null 0)
 				background: #ffffff
-				width: 50%
+				width: 55%
 				transform: translateY(50%)
-				padding: 2rem 6rem 2rem 0	
+				padding: 3rem	
+				p
+					width: 85%
+				.form-group
+					width: 80%
 				.icon
 					+pos(abs,50% 2rem null null)
 					transform: translateY(-50%)
+				
+					
 	.banhxe
 		display: none
 		max-width: 80px
@@ -145,9 +168,104 @@
 		+media-breakpoint-up(lg)
 			display: flex
 .home-tintuc
+	background: url('../img/home_background_tintuc.png')
+	background-size: cover
+	.tintuc1
+		padding: 2rem 0 1rem 0
+	.tintuc2
+		padding-bottom: 3rem
+		.tintuc2-1
+			position: relative
+			width: 100%
+			height: 100%
+			background-image: url('../img/home_news3.png')
+			background-size: cover
+			display: block
+			@media (max-width: 700px)
+				display: none
+			.chuday
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0%
+				left: 0rem
+				background: linear-gradient(180deg, #ecb57000 0%, #000000cf 100%)
+		h5
+			color: white
+			font-size: 23px
+			font-family: inherit
+			position: absolute
+			top: 90%
+			left: 6rem
+		.tintuc3
+			.tintuc3-2
+				background-color: white
+			.col-sm-6
+				padding: 0
+				img
+					width: 100%
+				figcaption
+					padding: 1rem
+					+media-breakpoint-up(md)
+						padding-bottom: 0
+					h6
+						font-size: 15px
+						+media-breakpoint-up(md)
+							font-size: 12px
+						+media-breakpoint-up(lg)
+							font-size: 15px
+					p
+						font-size: 14px
+						+media-breakpoint-up(md)
+							font-size: 8px
+						+media-breakpoint-up(lg)
+							font-size: 14px
+					.xemthem
+						text-align: right
+						font-size: 15px
+						
+						a
+							color: #ff6c00
+		.tintuc4
+			.col-sm-6
+				padding: 0
+			.tintuc4-1
+				order: 2
+				background: white
+				h6
+					font-size: 15px
+					+media-breakpoint-up(md)
+						font-size: 9px
+					+media-breakpoint-up(lg)
+						font-size: 15px
+				p
+					font-size: 14px
+					+media-breakpoint-up(md)
+						font-size: 8px
+					+media-breakpoint-up(lg)
+						font-size: 14px
+				+media-breakpoint-up(md)
+					order: 1
+				
+			.tintuc4-2
+				order: 1
+				+media-breakpoint-up(md)
+					order: 2
+				img
+					width: 100%
+			figcaption
+				padding: 1rem
+				
+				
+				.xemthem
+					text-align: right
+					font-size: 15px
+					a
+						color: #ff6c00
 	.tintuc1
 		+cangiua()
 		width: 100%
-		
+	
+
 
 
