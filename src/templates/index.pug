@@ -1,6 +1,6 @@
 extends _layout/layout
 
-//- Các giá trị mặc định cho trang web
+//- Các giá trị mặc định cho t-haig web
 block variables
 	- var title = 'Home'
 	- var description = 'Description for home page'
@@ -44,10 +44,10 @@ block body
 				.col-sm-4.item
 					figure
 						img.img-fluid(src="img/home_services_03.png", alt="")
-	section.home-khuyenmai
-		.container.mt-5
+	section.home-khuyenmai.mt-5
+		.container
 			.row.khuyenmai
-				.col-sm-6
+				.col-sm-6.col-md-6
 					.info
 						.tieude
 							h3 CHƯƠNG TRÌNH KHUYẾN MÃI
@@ -55,9 +55,54 @@ block body
 							p
 						.text
 							p Cùng với nhiều chiếc khấu và ưu đãi hấp dẫn, Tuto luôn đồng hành cùng bạn trên mọi chặng đường.
-						a.btn(href="#") XEM THÊM
-				.col-sm-6
+							a.btn(href="#") XEM THÊM
+				.col-sm-6.col-md-6
 					.babanhxe
 						figure
 							img.img-fluid(src="img/3_banh_xe.png", alt="")
+	section.news
+		.container.mt-3
+			.row
+				.col.banhxe 
+				.col
+					.row
+						.col.p-0
+							figure
+								img(src="img/home_news1.png", alt="")
+								figcaption
+									.tieude
+										h3 CHƯƠNG TRÌNH KHUYẾN MÃI
+									.cheoleft
+										p
+									p Tutto Việt Nam tự hào là nhà phân phối vỏ -ruột xe cao cấp cho hàng ngàn chiếc xe trong thập kỷ qua. Với hơn 10 năm hoạt động phân phối vỏ ruột xe, Tutto thấu hiểu rõ những gì tốt nhất cho chiếc xe của bạn. Từ những mong muốn của bạn, đội ngũ Tutto cam kết một dịch vụ trọn gói tốt nhất từ A đến Z.
+									.icon
+										i.fa.fa-arrow-right
+						.col.p-0
+							figure
+								img(src="img/home_news2.png", alt="")
+								figcaption
+									.tieude
+										h2 CHƯƠNG TRÌNH KHUYẾN MÃI
+									.cheoleft
+											p
+									p Tutto Việt Nam tự hào là nhà phân phối vỏ -ruột xe cao cấp cho hàng ngàn chiếc xe trong thập kỷ qua. Với hơn 10 năm hoạt động phân phối vỏ ruột xe, Tutto thấu hiểu rõ những gì tốt nhất cho chiếc xe của bạn. Từ những mong muốn của bạn, đội ngũ Tutto cam kết một dịch vụ trọn gói tốt nhất từ A đến Z.
+									.icon
+										i.fa.fa-arrow-right
+	section.home-tintuc.mt-5
+		.container
+			.row.tintuc1
+				.tieude
+					h3 TIN TỨC
+				.cheocenter
+					p
+			.row
+				.col
+					figure
+						img(src="img/home_news3.png", alt="")
+					figcaption
+						
+				.col
+
+
+
 

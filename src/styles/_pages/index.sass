@@ -86,10 +86,15 @@
 						color: white
 						font-size: 20px
 						font-family: 'Open Sans', sans-serif
+						+media-breakpoint-up(sm)
+							font-size: 14px
+						+media-breakpoint-up(md)
+							font-size: 20px
 				a
-					background-color: #ff9800ed
+					background-color: #ff9800
 					width: 160px
 					color: white
+
 		.babanhxe
 			padding: 3rem
 			figure
@@ -97,10 +102,52 @@
 					width: 350px
 					height: auto
 					+media-breakpoint-up(sm)
-						margin-left: 40px
+						ma
+							rgin-left: 40px
 					+media-breakpoint-up(md)
 						margin-left: 60px
 					+media-breakpoint-up(lg)
 						margin-left: 90px
+.news
+	figure
+		img
+			width: 100%
+		figcaption
+			padding: 1rem
+			.tieude
+				text-align: left
+			p
+				text-align: left
+			.icon
+				i
+					color: #ff9800
+	+media-breakpoint-up(lg)
+		figure
+			text-align: right
+			position: relative
+			width: 100%
+			img
+				width: initial
+			figcaption
+				+pos(abs, 0% null null 0)
+				background: #ffffff
+				width: 50%
+				transform: translateY(50%)
+				padding: 2rem 6rem 2rem 0	
+				.icon
+					+pos(abs,50% 2rem null null)
+					transform: translateY(-50%)
+	.banhxe
+		display: none
+		max-width: 80px
+		background-image: url('../img/banh_xe.png')
+		background-size: cover
+		+media-breakpoint-up(lg)
+			display: flex
+.home-tintuc
+	.tintuc1
+		+cangiua()
+		width: 100%
+		
 
 
